@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PATTON OSWALT | DARK ARCHIVE</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+
+        .article-hero {
+            padding: 100px 8% 70px;
+            background:
+                radial-gradient(circle at 80% 30%, #300909, transparent 40%),
+                #080808;
+            border-bottom: 1px solid #292929;
+        }
+
+        .back-link {
+            color: #ff3030;
+            text-decoration: none;
+            font-size: 11px;
+            letter-spacing: 2px;
+        }
+
+        .file-label {
+            margin-top: 55px;
+            color: #ff3030;
+            font-size: 11px;
+            letter-spacing: 3px;
+        }
+
+        .article-hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(40px, 7vw, 85px);
+            margin-top: 20px;
+            line-height: 1.15;
+        }
+
+        .article-hero h1 span {
+            color: #ff3030;
+        }
+
+        .article-subtitle {
+            color: #999;
+            max-width: 650px;
+            line-height: 1.9;
+            margin-top: 25px;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            color: #777;
+            font-size: 10px;
+            letter-spacing: 2px;
+        }
+
+        .article-layout {
+            display: grid;
+            grid-template-columns: 230px 1fr;
+            gap: 65px;
+            padding: 80px 8%;
+            max-width: 1500px;
+            margin: auto;
+        }
+
+        .article-sidebar {
+            position: sticky;
+            top: 120px;
+            align-self: start;
+            border-left: 1px solid #ff3030;
+            padding-left: 20px;
+        }
+
+        .article-sidebar h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 12px;
+            margin-bottom: 25px;
+        }
+
+        .article-sidebar a {
+            display: block;
+            text-decoration: none;
+            color: #777;
+            font-size: 11px;
+            margin-bottom: 18px;
+            transition: .3s;
+        }
+
+        .article-sidebar a:hover {
+            color: #ff3030;
+        }
+
+        .article-content {
+            max-width: 850px;
+        }
+
+        .article-section {
+            margin-bottom: 75px;
+            scroll-margin-top: 120px;
+        }
+
+        .article-section .section-number {
+            color: #ff3030;
+            font-size: 10px;
+            letter-spacing: 3px;
+        }
+
+        .article-section h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 26px;
+            margin: 18px 0 25px;
+            line-height: 1.4;
+        }
+
+        .article-section p {
+            color: #aaa;
+            font-size: 14px;
+            line-height: 2;
+            margin-bottom: 20px;
+        }
+
+        .article-section h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 15px;
+            color: #fff;
+            margin: 30px 0 15px;
+        }
+
+        .archive-quote {
+            border-left: 3px solid #ff3030;
+            background: #111;
+            padding: 25px;
+            margin: 30px 0;
+        }
+
+        .archive-quote p {
+            color: #ddd;
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .info-box {
+            background: #111;
+            border: 1px solid #292929;
+            padding: 25px;
+            margin: 30px 0;
+        }
+
+        .info-box h3 {
+            color: #ff3030;
+            margin-top: 0;
+        }
+
+        .info-box p {
+            margin-bottom: 0;
+        }
+
+        .article-tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .article-tags span {
+            border: 1px solid #333;
+            color: #999;
+            padding: 9px 13px;
+            font-size: 9px;
+            letter-spacing: 1px;
+        }
+
+        .article-end {
+            border-top: 1px solid #292929;
+            padding-top: 30px;
+            margin-top: 50px;
+        }
+
+        .article-end h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 22px;
+        }
+
+        .article-end p {
+            color: #888;
+            line-height: 1.8;
+            margin-top: 15px;
+        }
+
+        @media(max-width: 800px) {
+
+            .article-layout {
+                grid-template-columns: 1fr;
+                gap: 45px;
+            }
+
+            .article-sidebar {
+                position: static;
+            }
+
+            .article-sidebar a {
+                display: inline-block;
+                margin-right: 15px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <a href="../index.html" class="logo">
+            DARK<span>ARCHIVE</span>
+        </a>
+
+        <nav>
+            <a href="../index.html">HOME</a>
+            <a href="../index.html#database">DATABASE</a>
+            <a href="../index.html#categories">CATEGORIES</a>
+            <a href="../index.html#about">ABOUT</a>
+        </nav>
+
+        <div class="status">
+            <span></span> SYSTEM ONLINE
+        </div>
+
+    </header>
+
+
+    <!-- ARTICLE HERO -->
+
+    <section class="article-hero">
+
+        <a href="../index.html" class="back-link">
+            ← BACK TO ARCHIVE
+        </a>
+
+        <div class="file-label">
+            DARK ARCHIVE / WHATS NEW / FILE #007
+        </div>
+
+        <h1>
+            PATTON<br>
+            <span>OSWALT.</span>
+        </h1>
+
+        <p class="article-subtitle">
+            A closer look at the comedian, actor, writer and performer
+            whose work moves between observational comedy, storytelling,
+            pop culture and personal experiences.
+        </p>
+
+        <div class="article-meta">
+            <span>FILE NUMBER: 007</span>
+            <span>CLASSIFICATION: PROFILE</span>
+            <span>STATUS: OPEN</span>
+        </div>
+
+    </section>
+
+
+    <!-- ARTICLE CONTENT -->
+
+    <main class="article-layout">
+
+        <!-- SIDEBAR -->
+
+        <aside class="article-sidebar">
+
+            <h3>FILE CONTENTS</h3>
+
+            <a href="#biography">01. Biography</a>
+            <a href="#career">02. Career</a>
+            <a href="#comedians">03. The Comedians of Comedy</a>
+            <a href="#writing">04. Writing Process</a>
+            <a href="#criticism">05. Criticism</a>
+            <a href="#personal">06. Personal Experiences</a>
+            <a href="#television">07. Television & Acting</a>
+            <a href="#craft">08. The Craft of Comedy</a>
+            <a href="#influences">09. Influences</a>
+            <a href="#performances">10. Performances</a>
+            <a href="#legacy">11. Legacy</a>
+
+        </aside>
+
+
+        <article class="article-content">
+
+
+            <!-- 01 BIOGRAPHY -->
+
+            <section class="article-section" id="biography">
+
+                <span class="section-number">01 / BIOGRAPHY</span>
+
+                <h2>THE PERSON BEHIND THE MICROPHONE</h2>
+
+                <p>
+                    Patton Oswalt is an American comedian, actor and writer
+                    known for his distinctive storytelling, sharp observations
+                    and interest in popular culture.
+                </p>
+
+                <p>
+                    His work covers a wide range of subjects, from everyday
+                    situations and relationships to entertainment, politics,
+                    social behaviour and the strange details of modern life.
+                </p>
+
+                <p>
+                    Rather than relying on a single comedic style, Oswalt
+                    combines personal stories, cultural references and
+                    carefully developed ideas to create performances
+                    that feel both thoughtful and entertaining.
+                </p>
+
+                <div class="info-box">
+
+                    <h3>PROFILE INFORMATION</h3>
+
+                    <p>
+                        Profession: Comedian, Actor and Writer<br><br>
+                        Nationality: American<br><br>
+                        Known for: Stand-up comedy, television,
+                        films and writing.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- 02 CAREER -->
+
+            <section class="article-section" id="career">
+
+                <span class="section-number">02 / CAREER</span>
+
+                <h2>FROM STAND-UP TO ENTERTAINMENT</h2>
+
+                <p>
+                    Oswalt developed his career through stand-up comedy,
+                    performing in comedy clubs and gradually building
+                    recognition for his distinctive material.
+                </p>
+
+                <p>
+                    His performances often combine humour with observations
+                    about ordinary life, entertainment culture and the
+                    contradictions people encounter in society.
+                </p>
+
+                <p>
+                    Over time, he expanded into acting and writing.
+                    His work in television and film introduced him
+                    to audiences beyond the stand-up comedy scene.
+                </p>
+
+                <p>
+                    This combination of different creative roles became
+                    an important part of his professional identity.
+                </p>
+
+            </section>
+
+
+            <!-- 03 COMEDIANS OF COMEDY -->
+
+            <section class="article-section" id="comedians">
+
+                <span class="section-number">03 / COMEDY PROJECT</span>
+
+                <h2>THE COMEDIANS OF COMEDY</h2>
+
+                <p>
+                    The Comedians of Comedy was a project associated
+                    with Patton Oswalt and fellow comedians. It explored
+                    an alternative approach to live comedy performances.
+                </p>
+
+                <p>
+                    Instead of focusing only on conventional large
+                    comedy venues, the project brought comedians
+                    together for performances in smaller and
+                    more intimate settings.
+                </p>
+
+                <p>
+                    It also became a way to document the personalities,
+                    conversations and creative approaches of performers
+                    outside the stage.
+                </p>
+
+                <div class="archive-quote">
+
+                    <p>
+                        Comedy can be more than a performance.
+                        It can also be a conversation between
+                        the performer and the audience.
+                    </p>
+
+                </div>
+
+                <p>
+                    The project reflected an interest in experimentation
+                    and in finding different ways to present comedy
+                    to an audience.
+                </p>
+
+            </section>
+
+
+            <!-- 04 WRITING -->
+
+            <section class="article-section" id="writing">
+
+                <span class="section-number">04 / CREATIVE PROCESS</span>
+
+                <h2>NOTEBOOKS, IDEAS AND THE WRITING PROCESS</h2>
+
+                <p>
+                    Writing and developing new material is an important
+                    part of a comedian's work. Oswalt has discussed
+                    the role of keeping notes and collecting ideas
+                    for future performances.
+                </p>
+
+                <p>
+                    An ordinary observation, an unusual conversation
+                    or an interesting cultural reference can become
+                    the starting point for a larger comedic idea.
+                </p>
+
+                <h3>THE IMPORTANCE OF NOTES</h3>
+
+                <p>
+                    Recording ideas helps a performer preserve thoughts
+                    that might otherwise disappear. A small observation
+                    can later develop into a complete routine.
+                </p>
+
+                <h3>DEVELOPING MATERIAL</h3>
+
+                <p>
+                    A first idea is not necessarily a finished joke.
+                    Material develops through writing, editing,
+                    performance and reconsideration.
+                </p>
+
+                <p>
+                    This process highlights the amount of preparation
+                    and revision that can exist behind a seemingly
+                    spontaneous comedy performance.
+                </p>
+
+            </section>
+
+
+            <!-- 05 CRITICISM -->
+
+            <section class="article-section" id="criticism">
+
+                <span class="section-number">05 / PUBLIC DISCUSSION</span>
+
+                <h2>CRITICISM AND THE COMEDIAN</h2>
+
+                <p>
+                    Comedy is a public form of entertainment.
+                    Once material reaches an audience, it becomes
+                    open to different interpretations and reactions.
+                </p>
+
+                <p>
+                    In discussions about criticism, an important
+                    question is how performers respond when people
+                    disagree with their work.
+                </p>
+
+                <p>
+                    A comedian may intend a joke in one way, while
+                    different members of an audience understand
+                    it in completely different ways.
+                </p>
+
+                <p>
+                    This makes criticism and audience response
+                    an unavoidable part of a public creative career.
+                </p>
+
+                <div class="info-box">
+
+                    <h3>ARCHIVE OBSERVATION</h3>
+
+                    <p>
+                        Comedy is not created in isolation.
+                        It exists through the relationship between
+                        the performer, the material and the audience.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- 06 PERSONAL -->
+
+            <section class="article-section" id="personal">
+
+                <span class="section-number">06 / PERSONAL EXPERIENCES</span>
+
+                <h2>HEALTH, TRAVEL AND REAL-LIFE EXPERIENCES</h2>
+
+                <p>
+                    Interviews with performers often move beyond
+                    professional achievements and explore personal
+                    experiences that influence their perspectives.
+                </p>
+
+                <h3>HEALTH AND PERSONAL LIFE</h3>
+
+                <p>
+                    Health and personal circumstances can influence
+                    how performers approach their work, schedules
+                    and everyday responsibilities.
+                </p>
+
+                <h3>AMSTERDAM AND TRAVEL</h3>
+
+                <p>
+                    Travel can introduce people to unfamiliar
+                    environments, cultures and social attitudes.
+                    Discussions about places such as Amsterdam
+                    can provide a wider perspective on differences
+                    between societies.
+                </p>
+
+                <h3>CRIME AND SOCIETY</h3>
+
+                <p>
+                    Crime-related discussions can explore how
+                    entertainment, news and public perception
+                    shape the way people understand criminal
+                    behaviour and social issues.
+                </p>
+
+                <p>
+                    These subjects also demonstrate how interviews
+                    can move from comedy into broader conversations
+                    about real-world experiences.
+                </p>
+
+            </section>
+
+
+            <!-- 07 TELEVISION -->
+
+            <section class="article-section" id="television">
+
+                <span class="section-number">07 / SCREEN CAREER</span>
+
+                <h2>TELEVISION AND ACTING</h2>
+
+                <p>
+                    Oswalt's career is not limited to stand-up comedy.
+                    He has also worked as an actor and voice performer
+                    across television and film.
+                </p>
+
+                <p>
+                    His acting work demonstrates a different side
+                    of his creativity: instead of presenting his
+                    own material directly to an audience, he takes
+                    on characters and works within stories created
+                    by other writers and filmmakers.
+                </p>
+
+                <p>
+                    Television also requires a different approach
+                    to timing, dialogue and character development
+                    compared with live stand-up performances.
+                </p>
+
+                <p>
+                    Moving between these formats allowed him
+                    to explore several areas of entertainment.
+                </p>
+
+            </section>
+
+
+            <!-- 08 COMEDY CRAFT -->
+
+            <section class="article-section" id="craft">
+
+                <span class="section-number">08 / THE ART OF COMEDY</span>
+
+                <h2>THE CRAFT BEHIND A JOKE</h2>
+
+                <p>
+                    Good comedy often depends on more than simply
+                    saying something funny. Timing, structure,
+                    delivery and audience expectations all play
+                    important roles.
+                </p>
+
+                <h3>OBSERVATION</h3>
+
+                <p>
+                    Many comedic ideas begin with noticing something
+                    that other people overlook or recognise but
+                    rarely discuss.
+                </p>
+
+                <h3>STRUCTURE</h3>
+
+                <p>
+                    A performance needs a clear direction.
+                    The order of ideas and the way information
+                    is revealed can change how an audience reacts.
+                </p>
+
+                <h3>DELIVERY</h3>
+
+                <p>
+                    Pauses, expressions, voice and timing can
+                    influence the meaning and impact of a joke.
+                </p>
+
+                <h3>EXPERIMENTATION</h3>
+
+                <p>
+                    Performers regularly test ideas and discover
+                    which approaches communicate most effectively
+                    with an audience.
+                </p>
+
+            </section>
+
+
+            <!-- 09 INFLUENCES -->
+
+            <section class="article-section" id="influences">
+
+                <span class="section-number">09 / INFLUENCES</span>
+
+                <h2>BILL HICKS, RICHARD PRYOR AND COMEDY HISTORY</h2>
+
+                <p>
+                    Understanding a comedian's influences can reveal
+                    something about the creative traditions that
+                    shaped their work.
+                </p>
+
+                <h3>BILL HICKS</h3>
+
+                <p>
+                    Bill Hicks became known for performances that
+                    combined comedy with social criticism and
+                    challenging observations about culture.
+                </p>
+
+                <h3>RICHARD PRYOR</h3>
+
+                <p>
+                    Richard Pryor was an influential stand-up
+                    comedian whose storytelling, performance
+                    style and personal honesty helped shape
+                    modern stand-up comedy.
+                </p>
+
+                <p>
+                    These performers represent important parts
+                    of comedy history. Studying their work helps
+                    explain how different generations of comedians
+                    have developed their own approaches.
+                </p>
+
+            </section>
+
+
+            <!-- 10 PERFORMANCES -->
+
+            <section class="article-section" id="performances">
+
+                <span class="section-number">10 / PUBLIC PERFORMANCES</span>
+
+                <h2>THE USO AND VETERAN PERFORMANCES</h2>
+
+                <p>
+                    Entertainment performances for military personnel
+                    and veterans have a long history. Such events
+                    bring performers into settings that are different
+                    from conventional comedy clubs or theatres.
+                </p>
+
+                <p>
+                    The USO is known for organising entertainment
+                    and support activities for members of the
+                    United States military community.
+                </p>
+
+                <p>
+                    Discussions about these performances can
+                    explore the relationship between entertainment,
+                    service and the experiences of military audiences.
+                </p>
+
+            </section>
+
+
+            <!-- 11 LEGACY -->
+
+            <section class="article-section" id="legacy">
+
+                <span class="section-number">11 / ARCHIVE SUMMARY</span>
+
+                <h2>A CAREER ACROSS DIFFERENT CREATIVE WORLDS</h2>
+
+                <p>
+                    Patton Oswalt's career connects several areas
+                    of entertainment: stand-up comedy, writing,
+                    television, film and voice acting.
+                </p>
+
+                <p>
+                    His work demonstrates how a performer can
+                    develop ideas from everyday observations
+                    and turn them into material for different
+                    audiences and formats.
+                </p>
+
+                <p>
+                    From comedy clubs to television projects,
+                    his career offers an example of the many
+                    directions a creative career can take.
+                </p>
+
+                <div class="article-end">
+
+                    <h2>END OF FILE #007</h2>
+
+                    <p>
+                        DOCUMENT STATUS: ARCHIVED<br>
+                        CLASSIFICATION: PUBLIC<br>
+                        DATABASE: DARK ARCHIVE
+                    </p>
+
+                </div>
+
+                <div class="article-tags">
+
+                    <span>COMEDY</span>
+                    <span>ENTERTAINMENT</span>
+                    <span>TELEVISION</span>
+                    <span>WRITING</span>
+                    <span>PROFILE</span>
+
+                </div>
+
+            </section>
+
+        </article>
+
+    </main>
+
+
+    <footer>
+
+        <div class="logo">
+            DARK<span>ARCHIVE</span>
+        </div>
+
+        <p>THE UNKNOWN HAS NO END.</p>
+
+        <p>CREATED BY<br>VIRAJ SAMBYAL</p>
+
+        <small>© 2026 DARK ARCHIVE. ALL RIGHTS RESERVED.</small>
+
+    </footer>
+
+</body>
+
+</html>

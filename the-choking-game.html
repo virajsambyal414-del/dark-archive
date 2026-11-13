@@ -1,0 +1,537 @@
+?variant="standard" id="58321" title="The Choking Game Archive HTML"
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE CHOKING GAME | DARK ARCHIVE</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .article-hero {
+            padding: 100px 8% 70px;
+            background: radial-gradient(circle at 80% 30%, #300909, transparent 40%), #080808;
+            border-bottom: 1px solid #292929;
+        }
+
+        .back-link {
+            color: #ff3030;
+            text-decoration: none;
+            font-size: 11px;
+            letter-spacing: 2px;
+        }
+
+        .file-label {
+            margin-top: 55px;
+            color: #ff3030;
+            font-size: 11px;
+            letter-spacing: 3px;
+        }
+
+        .article-hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(38px, 7vw, 78px);
+            margin-top: 20px;
+            line-height: 1.2;
+        }
+
+        .article-hero h1 span {
+            color: #ff3030;
+        }
+
+        .article-subtitle {
+            color: #999;
+            max-width: 700px;
+            line-height: 1.9;
+            margin-top: 25px;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 35px;
+            color: #777;
+            font-size: 10px;
+            letter-spacing: 2px;
+        }
+
+        .article-layout {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            gap: 60px;
+            padding: 80px 8%;
+            max-width: 1500px;
+            margin: auto;
+        }
+
+        .article-sidebar {
+            position: sticky;
+            top: 120px;
+            align-self: start;
+            border-left: 1px solid #ff3030;
+            padding-left: 20px;
+        }
+
+        .article-sidebar h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 12px;
+            margin-bottom: 25px;
+        }
+
+        .article-sidebar a {
+            display: block;
+            text-decoration: none;
+            color: #777;
+            font-size: 11px;
+            margin-bottom: 18px;
+        }
+
+        .article-sidebar a:hover {
+            color: #ff3030;
+        }
+
+        .article-content {
+            max-width: 850px;
+        }
+
+        .article-section {
+            margin-bottom: 70px;
+            scroll-margin-top: 120px;
+        }
+
+        .section-number {
+            color: #ff3030;
+            font-size: 10px;
+            letter-spacing: 3px;
+        }
+
+        .article-section h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 25px;
+            margin: 18px 0 25px;
+            line-height: 1.5;
+        }
+
+        .article-section h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 15px;
+            margin: 30px 0 15px;
+        }
+
+        .article-section p {
+            color: #aaa;
+            font-size: 14px;
+            line-height: 2;
+            margin-bottom: 20px;
+        }
+
+        .warning-box {
+            background: #190909;
+            border: 1px solid #8b2020;
+            padding: 25px;
+            margin: 30px 0;
+        }
+
+        .warning-box h3 {
+            color: #ff4545;
+            margin-top: 0;
+        }
+
+        .warning-box p {
+            color: #ddd;
+            margin-bottom: 0;
+        }
+
+        .info-box {
+            background: #111;
+            border: 1px solid #292929;
+            padding: 25px;
+            margin: 30px 0;
+        }
+
+        .info-box h3 {
+            color: #ff3030;
+            margin-top: 0;
+        }
+
+        .article-end {
+            border-top: 1px solid #292929;
+            padding-top: 30px;
+        }
+
+        .article-end h2 {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        @media(max-width: 800px) {
+            .article-layout {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .article-sidebar {
+                position: static;
+            }
+
+            .article-sidebar a {
+                display: inline-block;
+                margin-right: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <a href="../index.html" class="logo">DARK<span>ARCHIVE</span></a>
+
+    <nav>
+        <a href="../index.html">HOME</a>
+        <a href="../index.html#database">DATABASE</a>
+        <a href="../index.html#categories">CATEGORIES</a>
+        <a href="../index.html#about">ABOUT</a>
+    </nav>
+
+    <div class="status">
+        <span></span> SYSTEM ONLINE
+    </div>
+</header>
+
+<section class="article-hero">
+
+    <a href="../index.html" class="back-link">← BACK TO ARCHIVE</a>
+
+    <div class="file-label">DARK ARCHIVE / WHATS NEW / FILE #008</div>
+
+    <h1>
+        THE CHOKING<br>
+        <span>GAME.</span>
+    </h1>
+
+    <p class="article-subtitle">
+        An investigation into a dangerous youth phenomenon,
+        its misleading reputation as a harmless thrill,
+        historical reporting and the serious consequences
+        of restricting oxygen to the brain.
+    </p>
+
+    <div class="article-meta">
+        <span>FILE NUMBER: 008</span>
+        <span>CLASSIFICATION: PUBLIC SAFETY</span>
+        <span>STATUS: WARNING</span>
+    </div>
+
+</section>
+
+<main class="article-layout">
+
+    <aside class="article-sidebar">
+        <h3>FILE CONTENTS</h3>
+        <a href="#introduction">01. Introduction</a>
+        <a href="#phenomenon">02. The Phenomenon</a>
+        <a href="#history">03. Historical Background</a>
+        <a href="#psychology">04. Why Young People Take Risks</a>
+        <a href="#dangers">05. The Medical Dangers</a>
+        <a href="#reporting">06. Media Coverage</a>
+        <a href="#prevention">07. Prevention</a>
+        <a href="#conclusion">08. Conclusion</a>
+    </aside>
+
+    <article class="article-content">
+
+        <section class="article-section" id="introduction">
+            <span class="section-number">01 / INTRODUCTION</span>
+            <h2>WHEN A DANGEROUS ACTIVITY IS MISTAKEN FOR A GAME</h2>
+
+            <p>
+                The term "choking game" has been used to describe
+                a dangerous activity in which young people
+                deliberately restrict oxygen or blood flow to
+                the brain in pursuit of a temporary sensation.
+            </p>
+
+            <p>
+                Some historical articles presented the activity
+                using playful language, making it sound like
+                an ordinary childhood pastime. That description
+                hides the seriousness of the subject.
+            </p>
+
+            <div class="warning-box">
+                <h3>⚠ IMPORTANT SAFETY WARNING</h3>
+                <p>
+                    This is not a game or a safe challenge.
+                    Restricting oxygen or blood flow to the brain
+                    can cause permanent injury or death, even
+                    when someone does not intend to cause harm.
+                </p>
+            </div>
+        </section>
+
+        <section class="article-section" id="phenomenon">
+            <span class="section-number">02 / THE PHENOMENON</span>
+            <h2>UNDERSTANDING THE PHENOMENON</h2>
+
+            <p>
+                The activity has been reported among children
+                and teenagers in different countries. It is
+                sometimes associated with peer pressure,
+                curiosity, online trends and a desire to
+                experience something unusual.
+            </p>
+
+            <p>
+                The name can be misleading. Unlike an ordinary
+                playground game, this activity involves a
+                serious medical risk.
+            </p>
+
+            <p>
+                Historical reporting has also documented
+                different names being used for the same
+                dangerous behaviour.
+            </p>
+
+            <div class="info-box">
+                <h3>ARCHIVE NOTE</h3>
+                <p>
+                    Different names do not change the underlying
+                    danger. Any activity intended to restrict
+                    breathing or circulation should be treated
+                    as a serious safety concern.
+                </p>
+            </div>
+        </section>
+
+        <section class="article-section" id="history">
+            <span class="section-number">03 / HISTORICAL BACKGROUND</span>
+            <h2>A SUBJECT DISCUSSED ACROSS GENERATIONS</h2>
+
+            <p>
+                Reports about recreational choking activities
+                appeared in publications long before social
+                media became widespread.
+            </p>
+
+            <p>
+                Older accounts used different descriptions
+                and terminology. However, historical references
+                are not proof that the activity was common,
+                safe or widely accepted.
+            </p>
+
+            <p>
+                During the late twentieth and early twenty-first
+                centuries, schools, families, medical professionals
+                and journalists increasingly discussed the risks
+                associated with the phenomenon.
+            </p>
+
+            <p>
+                These reports helped bring attention to an issue
+                that many adults had previously known little about.
+            </p>
+        </section>
+
+        <section class="article-section" id="psychology">
+            <span class="section-number">04 / PSYCHOLOGY</span>
+            <h2>WHY DO YOUNG PEOPLE TAKE THESE RISKS?</h2>
+
+            <p>
+                Adolescence is a period of curiosity, social
+                development and increasing independence.
+                Young people may sometimes underestimate
+                risks, particularly when friends describe
+                an activity as harmless.
+            </p>
+
+            <h3>PEER PRESSURE</h3>
+
+            <p>
+                A person may feel that refusing a challenge
+                will make them appear afraid or excluded
+                from a group.
+            </p>
+
+            <h3>CURIOSITY</h3>
+
+            <p>
+                Unfamiliar sensations and unusual online
+                stories can create curiosity. Curiosity,
+                however, does not make an activity safe.
+            </p>
+
+            <h3>ONLINE INFLUENCE</h3>
+
+            <p>
+                Videos and posts can make dangerous behaviour
+                appear more common or less serious than it really is.
+            </p>
+        </section>
+
+        <section class="article-section" id="dangers">
+            <span class="section-number">05 / MEDICAL RISKS</span>
+            <h2>THE REAL DANGERS</h2>
+
+            <p>
+                The brain requires a continuous supply of oxygen
+                and blood to function properly. Interfering with
+                breathing or circulation can rapidly become
+                a medical emergency.
+            </p>
+
+            <h3>POSSIBLE CONSEQUENCES</h3>
+
+            <p>
+                Serious consequences can include loss of
+                consciousness, seizures, brain injury,
+                heart complications and death.
+            </p>
+
+            <p>
+                There is no reliable way to predict how an
+                individual will respond. A person can suffer
+                serious harm even if they have participated
+                in a similar activity before.
+            </p>
+
+            <div class="warning-box">
+                <h3>NEVER EXPERIMENT WITH OXYGEN RESTRICTION</h3>
+                <p>
+                    There is no safe technique, safe duration
+                    or guaranteed way to prevent injury.
+                    Never participate, encourage someone
+                    else or attempt to supervise this activity.
+                </p>
+            </div>
+        </section>
+
+        <section class="article-section" id="reporting">
+            <span class="section-number">06 / MEDIA COVERAGE</span>
+            <h2>HOW THE MEDIA BROUGHT ATTENTION TO IT</h2>
+
+            <p>
+                Newspaper reports, television programmes
+                and public discussions helped introduce
+                the subject to parents and educators.
+            </p>
+
+            <p>
+                Some reports focused on individual tragedies,
+                while others explored the role of peer pressure,
+                online communication and the difficulty of
+                recognising dangerous behaviour.
+            </p>
+
+            <p>
+                The subject also raised an important question:
+                how can journalists warn the public without
+                accidentally making a dangerous activity
+                appear exciting or attractive?
+            </p>
+
+            <div class="info-box">
+                <h3>MEDIA RESPONSIBILITY</h3>
+                <p>
+                    Responsible reporting should explain
+                    the risks without publishing instructions
+                    or presenting dangerous behaviour as entertainment.
+                </p>
+            </div>
+        </section>
+
+        <section class="article-section" id="prevention">
+            <span class="section-number">07 / PREVENTION</span>
+            <h2>RECOGNISING CONCERN AND GETTING HELP</h2>
+
+            <p>
+                Parents, teachers and friends can help by
+                creating an environment where young people
+                feel comfortable discussing online challenges
+                and peer pressure.
+            </p>
+
+            <h3>IMPORTANT WARNING SIGNS</h3>
+
+            <p>
+                Unexplained injuries around the neck,
+                repeated headaches, unusual confusion,
+                fainting episodes or unexplained periods
+                of illness should be taken seriously.
+            </p>
+
+            <p>
+                These signs do not prove that someone
+                has participated in this activity. They
+                are reasons to seek appropriate medical
+                advice and have a supportive conversation.
+            </p>
+
+            <h3>WHAT TO DO</h3>
+
+            <p>
+                If someone is unconscious, having difficulty
+                breathing or experiencing a suspected
+                oxygen-related emergency, call emergency
+                services immediately. In India, dial 112.
+            </p>
+
+            <p>
+                Do not leave the person alone. Follow the
+                emergency operator's instructions and
+                seek urgent medical attention.
+            </p>
+
+            <p>
+                If someone tells you they have tried this
+                activity, listen without shaming them and
+                involve a trusted adult.
+            </p>
+        </section>
+
+        <section class="article-section" id="conclusion">
+            <span class="section-number">08 / FINAL RECORD</span>
+            <h2>A WARNING WORTH REMEMBERING</h2>
+
+            <p>
+                The choking game demonstrates how dangerous
+                behaviour can be disguised as a harmless
+                challenge through humour, peer pressure
+                or misleading descriptions.
+            </p>
+
+            <p>
+                Its history is not simply a story about
+                an unusual youth activity. It is also
+                a reminder of the importance of accurate
+                information, responsible reporting and
+                open communication.
+            </p>
+
+            <div class="article-end">
+                <h2>END OF FILE #008</h2>
+                <p>
+                    DOCUMENT STATUS: ARCHIVED<br>
+                    CLASSIFICATION: PUBLIC SAFETY<br>
+                    DATABASE: DARK ARCHIVE
+                </p>
+            </div>
+        </section>
+
+    </article>
+
+</main>
+
+<footer>
+    <div class="logo">DARK<span>ARCHIVE</span></div>
+    <p>THE UNKNOWN HAS NO END.</p>
+    <p>CREATED BY<br>VIRAJ SAMBYAL</p>
+    <small>© 2026 DARK ARCHIVE. ALL RIGHTS RESERVED.</small>
+</footer>
+
+</body>
+</html>
+```
